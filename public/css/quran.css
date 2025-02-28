@@ -1,0 +1,184 @@
+body {
+    background: #f5f5f5;
+    font-family: "Amiri Quran", serif;
+}
+
+.quran-page {
+    width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9f5e9; /* Cream background */
+    border: 10px solid transparent;
+    border-image: url("/images/quran-border.png") 30 round; /* Custom ornate border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.surah-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(
+        to bottom,
+        #d4a017,
+        #f9f5e9
+    ); /* Gold gradient */
+    border-bottom: 2px solid #1f4a38; /* Green border */
+}
+
+.surah-name {
+    font-size: 2.5rem;
+    color: #1f4a38; /* Dark green */
+}
+
+.juz-info {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.quran-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    direction: rtl;
+    color: #000; /* Black text */
+}
+
+.ayah {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.ayah-number {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background: #d4a017; /* Gold */
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    background: #1f4a38; /* Dark green */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin: 0 1rem;
+    border-radius: 5px;
+}
+
+.side-panel {
+    position: absolute;
+    top: 2rem;
+    width: 100px;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.left {
+    left: -120px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.right {
+    right: -120px;
+    writing-mode: vertical-rl;
+}
+
+.quran-text {
+    font-family: "Amiri Quran", serif;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    text-align: {
+         {
+            app()->getLocale()=== 'ar' ? 'right' : "left";
+        }
+    }
+}
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fffef5;
+    border: 1px solid #d4a017;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+nav {
+    background: #1f4a38;
+    padding: 1rem;
+    border-bottom: 2px solid #d4a017;
+}
+nav a {
+    color: #f9f5e9;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+nav a:hover {
+    color: #d4a017;
+}
+footer {
+    background: #1f4a38;
+    color: #f9f5e9;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+.btn {
+    background: #1f4a38;
+    color: #f9f5e9;
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.btn:hover {
+    background: #173029;
+    color: #d4a017;
+}
+
+.arabic {
+    text-align: right;
+    font-family: 'Amiri', serif; /* Ensure you include an Arabic font */
+    font-size: 1.5rem;
+    direction: rtl;
+}
+
+.translation {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.verse {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.highlighted {
+    background-color: #ffffcc;
+}
+
+
+@media (max-width: 767px) {
+    .verse .col-md-6 {
+        width: 100%;
+    }
+    .arabic, .translation {
+        text-align: center;
+    }
+}
