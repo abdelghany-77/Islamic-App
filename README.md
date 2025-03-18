@@ -12,6 +12,10 @@ QuranApp is a web-based Islamic application designed to provide a traditional Qu
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 
 ## Screenshots
-![Screenshot 2025-02-28 173011](https://github.com/user-attachments/assets/87b6d754-af04-4576-b130-76a22de41302)
-![Screenshot 2025-02-28 173023](https://github.com/user-attachments/assets/00f4d5fb-afca-462b-ac39-e916be640a0c)
-![Screenshot 2025-02-28 173116](https://github.com/user-attachments/assets/2c4659b2-92ba-43ff-9c20-87385a76855e)
+![islamic 7](https://github.com/user-attachments/assets/05713735-94dd-4b41-a3e8-baa4cb6edab9)
+![islamic 6](https://github.com/user-attachments/assets/d45d2d4c-c80c-4183-8160-bae721d0e062)
+![islamic 5](https://github.com/user-attachments/assets/8c1e810e-8d64-4c9f-91bf-a15c7ffe1e95)
+![islamic 4](https://github.com/user-attachments/assets/2b464dc8-9eca-4990-9c25-08e92483aced)
+![islamic 3](https://github.com/user-attachments/assets/b2c973f5-4bf0-4dfa-abea-2b314a12fe8f)
+![islamic 2](https://github.com/user-attachments/assets/6b02f455-58a7-45b6-8752-385bc0fafc64)
+![islamic 1](https://github.com/user-attachments/assets/18ce0e30-c7ea-4563-af98-fd7ef9728180)
