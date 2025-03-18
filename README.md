@@ -1,6 +1,6 @@
 # Quran Web Application
 
-![Quran App Banner](https://placeholder-for-quran-app-banner.jpg)
+![islamic 1](https://github.com/user-attachments/assets/1d58eeaa-a46a-478e-a7b5-787c1be7d37b)
 
 ## Description
 
