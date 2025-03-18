@@ -8,6 +8,7 @@
       {
         "ignore": [
           "-webkit-text-size-adjust",
+          "-webkit-mask-image",
           "text-align: -webkit-match-parent"
         ]
       }

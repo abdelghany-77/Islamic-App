@@ -1,25 +1,27 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuranController;
-use App\Http\Controllers\HadithController;
+use App\Http\Controllers\AzkarController;
+use App\Http\Controllers\DuaaController;
 
-Route::get('/', function () { return view('welcome');});
+// Home Page
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+// Quran routes
+Route::get('/quran', [QuranController::class, 'index'])->name('quran.index');
+Route::get('/quran/surah/{surahNumber}', [QuranController::class, 'surah'])->name('quran.surah');
+Route::get('/quran/surah/{number}/tafsir', [QuranController::class, 'tafsir'])->name('quran.tafsir');
+Route::get('/quran/search', [QuranController::class, 'search'])->name('quran.search');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Azkar Routes
+Route::prefix('azkar')->name('azkar.')->group(function () {
+    Route::get('/', [AzkarController::class, 'index'])->name('index');
+    Route::get('/azkar/{category}', [AzkarController::class, 'category'])->name('category');
+});
 
-
-// Quran Routes
-    Route::get('/quran', [QuranController::class, 'index'])->name('quran.index');
-    Route::get('/quran/{surah}/{page?}', [QuranController::class, 'show'])->name('quran.show');
-    Route::get('/quran/search', [QuranController::class, 'search'])->name('quran.search');
-    // Hadith Routes
-    Route::get('/hadith', [HadithController::class, 'index'])->name('hadith.index');
-    Route::get('/hadith/book/{book}', [HadithController::class, 'showBook'])->name('hadith.book');
-    Route::get('/hadith/{hadith}', [HadithController::class, 'show'])->name('hadith.show');
-    Route::get('/hadith/search', [HadithController::class, 'search'])->name('hadith.search');
-
-
+// Duaa Routes
+Route::get('/duaa', [DuaaController::class, 'index'])->name('duaa.index');
+Route::get('/duaa/{slug}', [DuaaController::class, 'category'])->name('duaa.category');
+Route::get('/duaa/{slug}/{id}', [DuaaController::class, 'show'])->name('duaa.show');
