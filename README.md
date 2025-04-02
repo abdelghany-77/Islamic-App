@@ -1,66 +1,135 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Quran Web Application
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![islamic 1](https://github.com/user-attachments/assets/1d58eeaa-a46a-478e-a7b5-787c1be7d37b)
 
-## About Laravel
+## Description
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+A beautiful and feature-rich Quran web application built with Laravel. This application provides a complete digital Quran experience with an authentic mushaf-style reading interface, tafsir integration, and audio recitation features.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- 📖 **Beautiful Mushaf Reading Interface**
+  - Classic Quran page styling with traditional design elements
+  - Custom Arabic typography optimized for Quranic text
+  - Authentic page styling with decorative borders
+  - Collection of Dua and azkar 
 
-## Learning Laravel
+- 🔊 **Audio Recitation** (soon)
+  - Stream recitations by renowned Qaris
+  - Built-in audio player with playback controls
+  - Background playing capability
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- 📚 **Tafsir Integration** (soon)
+  - Read verse-by-verse explanations of the Quran
+  - Multiple tafsir sources available
+  - Clean, scholarly presentation
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- 🔍 **Quran Metadata**
+  - Comprehensive Surah information
+  - Juz' and Hizb indicators
+  - Meccan/Medinan classification
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- 📱 **Responsive Design**
+  - Works beautifully on all device sizes
+  - Optimized for both desktop and mobile reading
 
-## Laravel Sponsors
+- 🔖 **Reading Position Tracking**
+  - Remembers your last read verse
+  - Easy navigation between surahs
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 📷 Screenshots
+![islamic 7](https://github.com/user-attachments/assets/a4404809-270d-46d2-8e2d-189d7a4cdbda)
+![islamic 6](https://github.com/user-attachments/assets/927cc241-0a28-42e2-bd36-1314b6e1d2cd)
+![islamic 5](https://github.com/user-attachments/assets/d29c01e5-e2e0-4c23-be2d-02483d21416e)
+![islamic 4](https://github.com/user-attachments/assets/8cf0fd22-4ef6-4b56-a014-0ee707d77b84)
+![islamic 3](https://github.com/user-attachments/assets/780f83c8-feed-4a94-8cd6-ad4838e35c3c)
+![islamic 2](https://github.com/user-attachments/assets/1f66d390-4f40-4d94-8854-44a9c7147551)
+![islamic 1](https://github.com/user-attachments/assets/4b10821b-d6c4-4062-9d04-404083aaa7a9)
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
 
-## Contributing
+## 🚀 Installation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+# Clone the repository
+git clone https://github.com/abdelghany-77/quran-web-app.git
 
-## Code of Conduct
+# Navigate to the project directory
+cd quran-web-app
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Install dependencies
+composer install
+npm install
 
-## Security Vulnerabilities
+# Copy the environment file
+cp .env.example .env
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Generate application key
+php artisan key:generate
 
-## License
+# Run migrations
+php artisan migrate
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Compile assets
+npm run dev
+
+# Start the development server
+php artisan serve
+```
+
+## ⚙️ Configuration
+
+Configure the following environment variables in your `.env` file:
+
+```
+QURAN_API_BASE_URL=https://api.quran.com/api/v4
+QURAN_DEFAULT_TRANSLATION=en.sahih
+QURAN_DEFAULT_TAFSIR=ar.muyassar
+QURAN_DEFAULT_RECITER=mishari_rashid_al_afasy
+```
+
+## 🔧 API Integration
+
+This application integrates with the following APIs:
+
+| API | Purpose | Documentation |
+|-----|---------|---------------|
+| Quran.com API | Quran text, translations | [Link](https://quran.api-docs.io/v4/getting-started/introduction) |
+| TafsirAPI | Tafsir content | [Link](https://tafsir.app) |
+| QuranicAudio | Audio recitations | [Link](https://quranicaudio.com/) |
+
+## 📋 Usage
+
+1. **Browse** through the Surah index
+2. **Select** a Surah to read
+3. **Listen** to recitation using the audio player
+4. **Study** with verse-by-verse tafsir
+5. **Track** your reading progress automatically
+
+## 💻 Technologies Used
+
+- **Backend**: Laravel PHP Framework
+- **Frontend**: TailwindCSS, Alpine.js
+- **Data**: Quran.com API, QuranicAudio
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 🙏 Acknowledgments
+
+- [Quran.com](https://quran.com) for inspiration and API
+- [QuranicAudio](https://quranicaudio.com) for audio recitations
+- [King Fahd Quran Printing Complex](https://qurancomplex.gov.sa) for Quran text standards
+
+---
+
+<div align="center">
+  <p>Made with ❤️ for the Quran</p>
+</div>
