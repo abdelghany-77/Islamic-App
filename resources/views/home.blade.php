@@ -27,6 +27,10 @@
             class="bg-islamic-green-600 hover:bg-islamic-green-700 text-white px-6 py-2 rounded-full font-medium transition duration-300 shadow-md font-arabic">
             الأدعية اليومية
           </a>
+          <a href="{{ route('stories.index') }}"
+            class="bg-islamic-green-600 hover:bg-islamic-green-700 text-white px-6 py-2 rounded-full font-medium transition duration-300 shadow-md font-arabic">
+            القصص الإسلامية
+          </a>
         </div>
       </div>
     </div>
@@ -65,7 +69,6 @@
       @endif
     </div>
   </div>
-  <!-- Features Section -->
   <!-- Features Section -->
   <div class="container mx-auto px-4 py-16">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-islamic-green-800 font-arabic">
@@ -151,8 +154,34 @@
           </a>
         </div>
       </div>
+      <!-- Islamic Stories Section -->
+      <div
+        class="relative bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+        <div class="relative bg-gradient-to-b from-islamic-green-200 to-islamic-green-100 p-6 text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-islamic-green-700 relative z-10"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-xl md:text-2xl font-bold mb-3 text-islamic-green-800 font-arabic">القصص الإسلامية</h3>
+          <p class="text-gray-600 mb-4 font-arabic leading-relaxed">
+            استمتع بالقصص الإسلامية الملهمة من القرآن والسنة، وتعلم دروساً قيمة من حياة الأنبياء والصحابة.
+          </p>
+          <a href="{{ route('stories.index') }}"
+            class="inline-flex items-center px-4 py-2 bg-islamic-green-600 text-white rounded-full font-medium hover:bg-islamic-green-700 transition duration-300 shadow-md font-arabic">
+            استكشف القصص
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
+
 @endsection
 
 <style>

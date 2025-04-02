@@ -9,7 +9,9 @@
         "ignore": [
           "-webkit-text-size-adjust",
           "-webkit-mask-image",
-          "text-align: -webkit-match-parent"
+          "text-align: -webkit-match-parent",
+          "-webkit-overflow-scrolling",
+          "color-adjust"
         ]
       }
     ]

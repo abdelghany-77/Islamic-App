@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 use Stevebauman\Location\Facades\Location;
 use Illuminate\Support\Facades\Log;
+use App\Models\IslamicStory;
 
 class HomeController extends Controller
 {
@@ -78,7 +79,7 @@ class HomeController extends Controller
                 'errors' => new \Illuminate\Support\MessageBag(['msg' => 'تعذر جلب أوقات الصلاة. يرجى المحاولة لاحقًا.'])
             ]);
         }
-
-        return view('home', compact('timings', 'locationData'));
+        $featuredStories = IslamicStory::where('featured', true)->latest()->take(3)->get();
+        return view('home', compact('timings', 'locationData', 'featuredStories'));
     }
 }
